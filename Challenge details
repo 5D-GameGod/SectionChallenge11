@@ -1,0 +1,28 @@
+The goal of this challenge is to modularize my solution from a previous challenge in section 9 by refactoring it to make use of functions. However, instead of editing my existing code, I will be implementing a solution from scratch.
+
+The challenge is about creating a program that displays a menu option to the user as follows:
+
+P - Print numbers 
+A - Add a number 
+M - Display mean of the numbers 
+S - Display the smallest number 
+L - Display the largest number 
+Q - Quit
+
+Enter your choice:
+
+These options allow the user to create a list of numbers and also perform operations on the list.
+
+The program should only accept valid choices from the user, both upper and lowercase selections should be allowed. If an illegal choice is made, the program should display, "Unknown selection, please try again" and the menu options should be displayed again.
+
+If the user enters 'P' or 'p', all the elements of the list should be displayed inside square brackets seperated by a space. For example [1 2 3 4 5]. If the list is empty, the program should display "[] - the list is empty."
+
+If the user enters 'A' or 'a', then the program should prompt the user for an integer to add to the list. After the user has entered a number, the program should display that it was added. For example, if the user enters 5, the program should display "5 added". Duplicate entries are ok.
+
+If the user enters 'M' or 'm', the program should calculate and display the mean, returning the message "Unable to calculate the mean - no data" if the list is empty.
+
+If the user enters 'S' or 's', the program should determine and display the smallest number, returning the message "Unable to determine the smallest number - no data" if the list is empty.
+
+If the user enters 'L' or 'l', the program should determine and display the largest number, returning the message "Unable to determine the largest number - no data" if the list is empty.
+
+If the user enters 'Q' or 'q', then the program should display "Goodbye" and terminate.
