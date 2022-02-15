@@ -1,12 +1,12 @@
 #include<iostream>
 #include<vector>
+#include<cctype>
 
 void DisplayMenu();
 char GetChoice();
 
 void PrintNumbers(const std::vector<int>& v);
 void AddNumber(std::vector<int>& v);
-//void InputCheck(int& i, std::vector<int>& v);
 void CalculateMean(const std::vector<int>& v);
 void DetermineSmallest(const std::vector<int>& v);
 void DetermineLargest(const std::vector<int>& v);
@@ -27,7 +27,6 @@ int main()
 		}
 		else if (Choice == 'A')
 		{
-			//std::cout << "Please enter the number you wish to add to the list: ";
 			AddNumber(NumberList);
 		}
 		else if (Choice == 'M')
@@ -93,21 +92,9 @@ void AddNumber(std::vector<int> &v)
 	std::cout << "Enter the number you wish to add to the list: ";
 	int input{};
 	std::cin >> input;
-	//InputCheck(input,v);
 	v.push_back(input);
 	std::cout << input << " has been added to the list." << std::endl;
 }
-
-//void InputCheck(int &i, std::vector<int> &v)
-//{
-//	if (isdigit(i) == 1)
-//	{
-//		std::cout << "Valid Input.\n" << std::endl;
-//	}
-//	else
-//		std::cout << "Invalid Input. Please try again." << std::endl;
-//		AddNumber(v);
-//} 
 
 void CalculateMean(const std::vector<int> &v)
 {
